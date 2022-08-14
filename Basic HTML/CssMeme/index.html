@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>meme</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="border_page" data-element="paragraph">
+        <p  class="paragraph">CSS is Awesome</p>
+      </div>
+      <div class="buttont">
+        <label for="switch-button" class="toggle"
+          ><span class="toggle_label">Change</span
+          ><input
+            id="switch-button"
+            type="checkbox"
+            role="switch"
+            class="toggle_element"
+        /></label>
+      </div>
+    </div>
+
+    <script>
+      const paragraph = document.querySelector('[data-element="paragraph"]');
+
+      const switchWidth = document.querySelector("#switch-button");
+
+      switchWidth.addEventListener("change", () => {
+        paragraph.setAttribute(
+          "data-sizing",
+          switchWidth.checked ? "intrinsic" : "extrinsic"
+        );
+      });
+    </script>
+  </body>
+</html>
