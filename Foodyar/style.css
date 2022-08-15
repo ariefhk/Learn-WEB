@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", cursive;
+}
+
+section {
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+}
+
+.navwrapper {
+  background-color: tomato;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.contentwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.red{
+    background-color: tomato;
+}
+
+.blue{
+    background-color: slateblue;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 5em;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nav {
+  list-style: none;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav:hover {
+  background-color: white;
+  border-radius: 12px;
+  transition: all ease-in-out 0.25ms;
+}
+
+.nav:hover > a {
+  color: #222;
+}
+
+.navlink {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: white;
+}
+
+.top{
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  bottom: 20px;
+  right: 20px;
+  background-color: aliceblue;
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
